@@ -16,22 +16,22 @@ int main(int argc,char *argv[])
 	int c;
 	c = getopt_long(argc,argv,"h:bg:",option_value,NULL);
 	
-		switch(c)
-		{
-			case 'h':
-				cout<<"world"<<optarg<<endl;
-				break;
-			case 'g':
-				cout<<"bye"<<endl;
-				break;
-			case 'b':
-				cout<<"yun"<<endl;
-				break;
-			default:
-				cout<<"no inpute"<<endl;
-				break;
-		}
-	
+	switch(c)
+	{
+		case 'h':
+			cout<<"world"<<optarg<<endl;
+			break;
+		case 'g':
+			cout<<"bye"<<endl;
+			break;
+		case 'b':
+			cout<<"yun"<<endl;
+			break;
+		default:
+			cout<<"no inpute"<<endl;
+			break;
+	}
+
 	return 0;
 }
 
